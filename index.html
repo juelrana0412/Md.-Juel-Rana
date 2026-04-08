@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +8,81 @@
   <!-- Google Fonts & simple icons (Font Awesome) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    * { font-family: 'Inter', sans-serif; }
-    html { scroll-behavior: smooth; }
-    body { transition: background-color 0.3s, color 0.2s; }
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      transition: background-color 0.3s, color 0.2s;
+    }
+
     /* minimalist card style */
-    .project-card, .skill-cat { transition: transform 0.1s ease, box-shadow 0.2s; }
-    .dark .project-card, .dark .skill-cat { background: #1e293b; border-color: #334155; }
-    .project-card:hover { transform: translateY(-4px); }
+    .project-card,
+    .skill-cat {
+      transition: transform 0.1s ease, box-shadow 0.2s;
+    }
+
+    .dark .project-card,
+    .dark .skill-cat {
+      background: #1e293b;
+      border-color: #334155;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+    }
+
     /* tech stack icon style */
-    .tech-icon { display: inline-flex; align-items: center; gap: 4px; background: rgba(255,255,255,0.05); padding: 4px 8px; border-radius: 20px; font-size: 0.8rem; }
-    .dark .tech-icon { background: #2d3a4f; color: #e2e8f0; }
+    .tech-icon {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 4px 8px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+
+    .dark .tech-icon {
+      background: #2d3a4f;
+      color: #e2e8f0;
+    }
+
     /* toggle */
-    .toggle-checkbox:checked + .toggle-label { background-color: #2563eb; }
-    .toggle-checkbox:checked + .toggle-label:before { transform: translateX(1.5rem); }
+    .toggle-checkbox:checked+.toggle-label {
+      background-color: #2563eb;
+    }
+
+    .toggle-checkbox:checked+.toggle-label:before {
+      transform: translateX(1.5rem);
+    }
   </style>
 </head>
+
 <body class="bg-white text-gray-900 dark:bg-[#0b1120] dark:text-gray-200 antialiased">
 
   <!-- dark mode toggle + nav (simple) -->
   <div class="fixed top-5 right-6 z-50 flex items-center gap-3">
-    <button id="themeToggle" class="w-10 h-10 rounded-full bg-gray-200 dark:bg-slate-700 flex items-center justify-center shadow-md hover:scale-105 transition">
+    <button id="themeToggle"
+      class="w-10 h-10 rounded-full bg-gray-200 dark:bg-slate-700 flex items-center justify-center shadow-md hover:scale-105 transition">
       <i class="fas fa-moon dark:hidden text-gray-700"></i>
       <i class="fas fa-sun hidden dark:inline text-yellow-300"></i>
     </button>
   </div>
 
   <!-- navigation dots minimalist? just smooth scroll links in header -->
-  <header class="fixed top-0 left-0 w-full bg-white/80 dark:bg-[#0b1120]/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 z-40 py-3 px-6">
+  <header
+    class="fixed top-0 left-0 w-full bg-white/80 dark:bg-[#0b1120]/90 backdrop-blur-sm border-b border-gray-200 dark:border-gray-800 z-40 py-3 px-6">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <span class="text-lg font-semibold tracking-tight">JUEL</span>
       <nav class="space-x-6 text-sm font-medium hidden sm:block">
@@ -56,21 +101,24 @@
     <!-- Hero Section -->
     <section id="hero" class="min-h-[90vh] flex flex-col justify-center items-start py-16">
       <div>
-    <img
-      src="https://raw.githubusercontent.com/juelrana0412/Md.-Juel-Rana/main/1000001722.jpg"
-      alt="Juel Rana"
-      class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-blue-500 shadow-xl"
-    >
-  </div>
+        <img src="https://raw.githubusercontent.com/juelrana0412/Md.-Juel-Rana/main/1000001722.jpg" alt="Juel Rana"
+          class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-blue-500 shadow-xl">
+      </div>
       <h1 class="text-5xl md:text-7xl font-bold tracking-tight">Md. Juel Rana</h1>
       <h2 class="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mt-2">Backend Developer | ML Enthusiast</h2>
-      <p class="text-lg text-gray-500 dark:text-gray-500 mt-4 max-w-xl">Building scalable backend systems and AI-powered solutions.</p>
+      <p class="text-lg text-gray-500 dark:text-gray-500 mt-4 max-w-xl">Building scalable backend systems and AI-powered
+        solutions.</p>
       <div class="flex gap-4 mt-8">
-        <a href="https://raw.githubusercontent.com/juelrana0412/Md.-Juel-Rana/main/Md.%20Juel%20Rana%20.pdf" target="_blank" class="px-6 py-3 bg-green-600 text-white rounded-full">
-    Resume
-  </a>
-        <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition shadow-md">View Projects</a>
-        <a href="#contact" class="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-full font-medium transition">Contact Me</a>
+        <a href="https://raw.githubusercontent.com/juelrana0412/Md.-Juel-Rana/main/Md.%20Juel%20Rana%20.pdf"
+          target="_blank" class="px-6 py-3 bg-green-600 text-white rounded-full">
+          Resume
+        </a>
+        <a href="#projects"
+          class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition shadow-md">View
+          Projects</a>
+        <a href="#contact"
+          class="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-full font-medium transition">Contact
+          Me</a>
       </div>
 
       <!-- tiny tech icons floating? -->
@@ -91,16 +139,19 @@
       <div class="w-16 h-1 bg-blue-500 mb-8"></div>
       <div class="grid md:grid-cols-3 gap-8">
         <div class="md:col-span-2 space-y-4 text-gray-700 dark:text-gray-300 text-lg">
-          <p><span class="font-semibold">CSE student</span> at Green University of Bangladesh (4th year · CGPA 3.40).</p>
-          <p>Passionate about backend development, machine learning, and data-driven applications. Interested in AI technologies and modern backend architectures.</p>
-          <p>Currently researching machine learning models for analyzing climate change and predicting natural disasters.</p>
+          <p><span class="font-semibold">CSE student</span> at Green University of Bangladesh.
+          </p>
+          <p>Passionate about backend development, machine learning, and data-driven applications. Interested in AI
+            technologies and modern backend architectures.</p>
+          <p>Currently researching machine learning models for analyzing climate change and predicting natural
+            disasters.</p>
         </div>
         <div class="bg-gray-100 dark:bg-slate-800/70 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
           <h3 class="font-semibold text-xl mb-3">Quick info</h3>
           <ul class="space-y-2 text-sm">
-            <li><i class="fas fa-graduation-cap w-6 text-blue-500"></i> Green University · 4th year</li>
-            <li><i class="fas fa-star w-6 text-blue-500"></i> CGPA 3.40</li>
-            <li><i class="fas fa-map-pin w-6 text-blue-500"></i> Narayanganj, BD</li>
+            <li><i class="fas fa-graduation-cap w-6 text-blue-500"></i> Green University of Bangladesh</li>
+            <li><i class="fas fa-star w-6 text-blue-500"></i> CGPA 3.54</li>
+            <li><i class="fas fa-map-pin w-6 text-blue-500"></i> Dhaka, Bangladesh</li>
             <li><i class="fas fa-code w-6 text-blue-500"></i> 10+ projects</li>
           </ul>
         </div>
@@ -110,89 +161,90 @@
     <!-- Skills Section (categorised) -->
     <section id="skills" class="py-20 scroll-mt-20 bg-gray-50 dark:bg-[#0f172a] -mx-5 px-5 md:mx-0 md:px-8 rounded-3xl">
 
-  <h2 class="text-3xl font-semibold mb-2">🛠️ Skills</h2>
-  <div class="w-16 h-1 bg-blue-500 mb-10"></div>
+      <h2 class="text-3xl font-semibold mb-2">🛠️ Skills</h2>
+      <div class="w-16 h-1 bg-blue-500 mb-10"></div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <!-- Programming -->
-    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
-        <i class="fas fa-terminal text-blue-500"></i> Programming
-      </h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="tech-icon">Python</span>
-        <span class="tech-icon">Java</span>
-        <span class="tech-icon">C</span>
-        <span class="tech-icon">PHP</span>
-        <span class="tech-icon">JavaScript</span>
-        <span class="tech-icon">SQL</span>
-        <span class="tech-icon">Shell</span>
+        <!-- Programming -->
+        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+          <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+            <i class="fas fa-terminal text-blue-500"></i> Programming
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-icon">Python</span>
+            <span class="tech-icon">Java</span>
+            <span class="tech-icon">C</span>
+            <span class="tech-icon">PHP</span>
+            <span class="tech-icon">JavaScript</span>
+            <span class="tech-icon">SQL</span>
+            <span class="tech-icon">Shell</span>
+          </div>
+        </div>
+
+        <!-- Web Development -->
+        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+          <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+            <i class="fas fa-globe text-blue-500"></i> Web Development
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-icon">Django</span>
+            <span class="tech-icon">Flask</span>
+            <span class="tech-icon">HTML</span>
+            <span class="tech-icon">CSS</span>
+            <span class="tech-icon">JavaScript</span>
+            <span class="tech-icon">React.js</span>
+          </div>
+        </div>
+
+        <!-- AI & Data Science -->
+        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+          <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+            <i class="fas fa-robot text-blue-500"></i> AI & Data Science
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-icon">ML</span>
+            <span class="tech-icon">Deep Learning</span>
+            <span class="tech-icon">Pandas</span>
+            <span class="tech-icon">NumPy</span>
+            <span class="tech-icon">Matplotlib</span>
+            <span class="tech-icon">Scikit-learn</span>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+          <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+            <i class="fas fa-tools text-blue-500"></i> Tools
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-icon">Git</span>
+            <span class="tech-icon">GitHub</span>
+            <span class="tech-icon">VS Code</span>
+            <span class="tech-icon">Linux</span>
+            <span class="tech-icon">Ubuntu</span>
+            <span class="tech-icon">LaTeX</span>
+          </div>
+        </div>
+
+        <!-- Core CS -->
+        <div
+          class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700 md:col-span-2 lg:col-span-1">
+          <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+            <i class="fas fa-microchip text-blue-500"></i> Core CS
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="tech-icon">DSA</span>
+            <span class="tech-icon">DBMS</span>
+            <span class="tech-icon">OOP</span>
+            <span class="tech-icon">OS</span>
+            <span class="tech-icon">Networking</span>
+            <span class="tech-icon">AI</span>
+          </div>
+        </div>
+
       </div>
-    </div>
-
-    <!-- Web Development -->
-    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
-        <i class="fas fa-globe text-blue-500"></i> Web Development
-      </h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="tech-icon">Django</span>
-        <span class="tech-icon">Flask</span>
-        <span class="tech-icon">HTML</span>
-        <span class="tech-icon">CSS</span>
-        <span class="tech-icon">JavaScript</span>
-        <span class="tech-icon">React.js</span>
-      </div>
-    </div>
-
-    <!-- AI & Data Science -->
-    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
-        <i class="fas fa-robot text-blue-500"></i> AI & Data Science
-      </h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="tech-icon">ML</span>
-        <span class="tech-icon">Deep Learning</span>
-        <span class="tech-icon">Pandas</span>
-        <span class="tech-icon">NumPy</span>
-        <span class="tech-icon">Matplotlib</span>
-        <span class="tech-icon">Scikit-learn</span>
-      </div>
-    </div>
-
-    <!-- Tools -->
-    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
-        <i class="fas fa-tools text-blue-500"></i> Tools
-      </h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="tech-icon">Git</span>
-        <span class="tech-icon">GitHub</span>
-        <span class="tech-icon">VS Code</span>
-        <span class="tech-icon">Linux</span>
-        <span class="tech-icon">Ubuntu</span>
-        <span class="tech-icon">LaTeX</span>
-      </div>
-    </div>
-
-    <!-- Core CS -->
-    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700 md:col-span-2 lg:col-span-1">
-      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
-        <i class="fas fa-microchip text-blue-500"></i> Core CS
-      </h3>
-      <div class="flex flex-wrap gap-2">
-        <span class="tech-icon">DSA</span>
-        <span class="tech-icon">DBMS</span>
-        <span class="tech-icon">OOP</span>
-        <span class="tech-icon">OS</span>
-        <span class="tech-icon">Networking</span>
-        <span class="tech-icon">AI</span>
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 scroll-mt-20">
@@ -200,7 +252,8 @@
       <div class="w-16 h-1 bg-blue-500 mb-8"></div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <!-- card template -->
-        {projects.map(p => <ProjectCard key={p.title} {...p} />)}
+        {projects.map(p =>
+        <ProjectCard key={p.title} {...p} />)}
       </div>
     </section>
 
@@ -209,9 +262,13 @@
       <h2 class="text-3xl font-semibold mb-2">🔬 Research</h2>
       <div class="w-16 h-1 bg-blue-500 mb-6"></div>
       <div class="bg-indigo-50 dark:bg-indigo-950/30 p-8 rounded-3xl border border-indigo-100 dark:border-indigo-900">
-        <p class="text-xl font-medium">Machine Learning Models for Analyzing Climate Change and Predicting Natural Disasters</p>
-        <p class="text-gray-600 dark:text-gray-400 mt-3">Developing deep learning models to analyze climate patterns and contribute to early warning systems. Ongoing research at university lab.</p>
-        <div class="flex gap-3 mt-4 text-sm"><span class="bg-white dark:bg-slate-800 px-4 py-1 rounded-full">#ClimateAI</span><span class="bg-white dark:bg-slate-800 px-4 py-1 rounded-full">#DisasterPrediction</span></div>
+        <p class="text-xl font-medium">Machine Learning Models for Analyzing Climate Change and Predicting Natural
+          Disasters</p>
+        <p class="text-gray-600 dark:text-gray-400 mt-3">Developing deep learning models to analyze climate patterns and
+          contribute to early warning systems. Ongoing research at university lab.</p>
+        <div class="flex gap-3 mt-4 text-sm"><span
+            class="bg-white dark:bg-slate-800 px-4 py-1 rounded-full">#ClimateAI</span><span
+            class="bg-white dark:bg-slate-800 px-4 py-1 rounded-full">#DisasterPrediction</span></div>
       </div>
     </section>
 
@@ -222,11 +279,14 @@
       <div class="space-y-6">
         <div class="flex flex-col md:flex-row md:items-center gap-4 border-l-4 border-blue-400 pl-5 py-1">
           <div class="w-32 text-blue-600 dark:text-blue-400 font-semibold">Jun 2025 – Aug 2025</div>
-          <div><span class="text-xl font-medium">Software Developer</span> <span class="text-gray-500 dark:text-gray-400">· DMA Aqua & Agro Ltd</span></div>
+          <div><span class="text-xl font-medium">Software Developer</span> <span
+              class="text-gray-500 dark:text-gray-400">· DMA Aqua & Agro Ltd</span></div>
         </div>
-        <div class="flex flex-col md:flex-row md:items-center gap-4 border-l-4 border-blue-200 dark:border-blue-800 pl-5 py-1">
+        <div
+          class="flex flex-col md:flex-row md:items-center gap-4 border-l-4 border-blue-200 dark:border-blue-800 pl-5 py-1">
           <div class="w-32 text-blue-600 dark:text-blue-400 font-semibold">Internship</div>
-          <div><span class="text-xl font-medium">Battery Low Interactive</span> <span class="text-gray-500 dark:text-gray-400">· interactive tech, AR/VR environments</span></div>
+          <div><span class="text-xl font-medium">Battery Low Interactive</span> <span
+              class="text-gray-500 dark:text-gray-400">· interactive tech, AR/VR environments</span></div>
         </div>
       </div>
     </section>
@@ -237,11 +297,14 @@
       <div class="w-16 h-1 bg-blue-500 mb-8"></div>
       <div class="grid md:grid-cols-2 gap-10">
         <div class="space-y-4 text-gray-700 dark:text-gray-300">
-          <p class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500 w-6"></i> md.juelrana0412@gmail.com</p>
+          <p class="flex items-center gap-3"><i class="fas fa-envelope text-blue-500 w-6"></i> md.juelrana0412@gmail.com
+          </p>
           <p class="flex items-center gap-3"><i class="fas fa-phone-alt text-blue-500 w-6"></i> 01571-334976</p>
-          <p class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-blue-500 w-6"></i> Narayanganj, Bangladesh</p>
+          <p class="flex items-center gap-3"><i class="fas fa-map-marker-alt text-blue-500 w-6"></i> Dhaka,
+            Bangladesh</p>
           <div class="flex gap-5 pt-4 text-2xl">
-            <a href="https://www.linkedin.com/in/md-juel-rana-9a5428340/" class="hover:text-blue-500"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/md-juel-rana-9a5428340/" class="hover:text-blue-500"><i
+                class="fab fa-linkedin"></i></a>
             <a href="https://github.com/juelrana0412" class="hover:text-blue-500"><i class="fab fa-github"></i></a>
             <span class="text-sm bg-gray-100 dark:bg-gray-800 px-3 py-1 rounded-full">/juelrana0412</span>
           </div>
@@ -255,7 +318,8 @@
     </section>
 
     <!-- footer -->
-    <footer class="text-center text-gray-400 text-sm py-10 border-t dark:border-gray-800">© 2026 Md. Juel Rana · built with React & Tailwind (static demo)</footer>
+    <footer class="text-center text-gray-400 text-sm py-10 border-t dark:border-gray-800">© 2026 Md. Juel Rana · built
+      with React & Tailwind (static demo)</footer>
   </main>
 
   <script>
@@ -271,13 +335,14 @@
 
     // project list (with dummy github links)
     const projects = [
-      { title: 'Genova AI', desc: 'Flask chatbot using LLM to intelligently suggest medical information.', tech: ['Flask','Python','LLM'], link:'https://github.com/juelrana0412/GeNova_Ai' },
-      { title: 'E-Voting System', desc: 'Secure digital voting platform with Java and SQL.', tech: ['Java','SQL','Swing'], link:'#' },
-      { title: 'CGPA Calculator', desc: 'Command-line tool in C for academic performance.', tech: ['C','CLI'], link:'#' },
-      { title: 'Sudoku Game', desc: 'Logic-based puzzle game using shell scripting.', tech: ['Shell','Bash'], link:'#' },
-      { title: 'Mini Compiler', desc: 'Compiler built in C to parse basic language syntax.', tech: ['C','Lex/Yacc'], link:'#' },
-      { title: 'Messaging & File Transfer', desc: 'Socket programming project (TCP/UDP).', tech: ['Python','Socket'], link:'#' },
-      { title: 'Library Management System', desc: 'DBMS app for managing books and users.', tech: ['PHP','MySQL'], link:'#' }
+      { title: 'Genova AI', desc: 'Flask chatbot using LLM to intelligently suggest medical information.', tech: ['Flask', 'Python', 'LLM'], link: 'https://github.com/juelrana0412/GeNova_Ai' },
+     // {{ title: 'E-Commerce site System', desc: 'Secure digital voting platform with Java and SQL.', tech: ['Java', 'SQL', 'Swing']}
+      { title: 'E-Voting System', desc: 'Secure digital voting platform with Java and SQL.', tech: ['Java', 'SQL', 'Swing'], link: '#' },
+      { title: 'CGPA Calculator', desc: 'Command-line tool in C for academic performance.', tech: ['C', 'CLI'], link: '#' },
+      { title: 'Sudoku Game', desc: 'Logic-based puzzle game using shell scripting.', tech: ['Shell', 'Bash'], link: '#' },
+      { title: 'Mini Compiler', desc: 'Compiler built in C to parse basic language syntax.', tech: ['C', 'Lex/Yacc'], link: '#' },
+      { title: 'Messaging & File Transfer', desc: 'Socket programming project (TCP/UDP).', tech: ['Python', 'Socket'], link: '#' },
+      { title: 'Library Management System', desc: 'DBMS app for managing books and users.', tech: ['PHP', 'MySQL'], link: '#' }
     ];
 
     function ProjectCard({ title, desc, tech, link }) {
@@ -299,10 +364,10 @@
 
     // add smooth for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
+      anchor.addEventListener('click', function (e) {
         e.preventDefault();
         const id = this.getAttribute('href');
-        if(id === '#') return;
+        if (id === '#') return;
         const target = document.querySelector(id);
         if (target) target.scrollIntoView({ behavior: 'smooth' });
       });
@@ -315,4 +380,5 @@
   </script>
   <!-- small tweak: inline icons for Skills, use same pattern -->
 </body>
+
 </html>
