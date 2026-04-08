@@ -55,14 +55,24 @@
 
     <!-- Hero Section -->
     <section id="hero" class="min-h-[90vh] flex flex-col justify-center items-start py-16">
-      <p class="text-blue-600 dark:text-blue-400 font-semibold mb-2">Hi, I'm</p>
+      <div>
+    <img
+      src="https://raw.githubusercontent.com/juelrana0412/Md.-Juel-Rana/main/1000001722.jpg"
+      alt="Juel Rana"
+      class="w-56 h-56 md:w-72 md:h-72 rounded-full object-cover border-4 border-blue-500 shadow-xl"
+    >
+  </div>
       <h1 class="text-5xl md:text-7xl font-bold tracking-tight">Md. Juel Rana</h1>
       <h2 class="text-2xl md:text-3xl text-gray-600 dark:text-gray-400 mt-2">Backend Developer | ML Enthusiast</h2>
       <p class="text-lg text-gray-500 dark:text-gray-500 mt-4 max-w-xl">Building scalable backend systems and AI-powered solutions.</p>
       <div class="flex gap-4 mt-8">
+        <a href="https://raw.githubusercontent.com/juelrana0412/Md.-Juel-Rana/main/Md.%20Juel%20Rana%20.pdf" target="_blank" class="px-6 py-3 bg-green-600 text-white rounded-full">
+    Resume
+  </a>
         <a href="#projects" class="px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-full font-medium transition shadow-md">View Projects</a>
         <a href="#contact" class="px-6 py-3 border border-gray-300 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 rounded-full font-medium transition">Contact Me</a>
       </div>
+
       <!-- tiny tech icons floating? -->
       <div class="flex gap-3 mt-10 text-sm text-gray-500 dark:text-gray-400 flex-wrap">
         <span class="tech-icon"><i class="fab fa-python"></i> Python</span>
@@ -72,6 +82,7 @@
         <span class="tech-icon"><i class="fas fa-brain"></i> ML</span>
         <span class="tech-icon"><i class="fab fa-docker"></i> Docker</span>
       </div>
+
     </section>
 
     <!-- About Me -->
@@ -98,36 +109,90 @@
 
     <!-- Skills Section (categorised) -->
     <section id="skills" class="py-20 scroll-mt-20 bg-gray-50 dark:bg-[#0f172a] -mx-5 px-5 md:mx-0 md:px-8 rounded-3xl">
-      <h2 class="text-3xl font-semibold mb-2">🛠️ Skills</h2>
-      <div class="w-16 h-1 bg-blue-500 mb-10"></div>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- programming -->
-        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-          <h3 class="font-bold text-lg mb-3 flex items-center gap-2"><i class="fas fa-terminal text-blue-500"></i> Programming</h3>
-          <div class="flex flex-wrap gap-2"> {['Python','Java','C','PHP','JavaScript','SQL','Shell'].map(s => <span key=s class="tech-icon bg-gray-100 dark:bg-slate-700"> {s} </span>)} </div>
-        </div>
-        <!-- web -->
-        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border">
-          <h3 class="font-bold text-lg mb-3 flex items-center gap-2"><i class="fas fa-globe text-blue-500"></i> Web Development</h3>
-          <div class="flex flex-wrap gap-2"> {['Django','Flask','HTML','CSS','JavaScript','React.js'].map(s => <span key=s class="tech-icon"> {s} </span>)} </div>
-        </div>
-        <!-- AI & Data -->
-        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border">
-          <h3 class="font-bold text-lg mb-3 flex items-center gap-2"><i class="fas fa-robot text-blue-500"></i> AI & Data Science</h3>
-          <div class="flex flex-wrap gap-2"> {['ML','Deep Learning','Pandas','NumPy','Matplotlib','Scikit-learn'].map(s => <span key=s class="tech-icon"> {s} </span>)} </div>
-        </div>
-        <!-- tools -->
-        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border">
-          <h3 class="font-bold text-lg mb-3 flex items-center gap-2"><i class="fas fa-tools text-blue-500"></i> Tools</h3>
-          <div class="flex flex-wrap gap-2"> {['Git','GitHub','VS Code','Linux','Ubuntu','LaTeX'].map(s => <span key=s class="tech-icon"> {s} </span>)} </div>
-        </div>
-        <!-- core CS -->
-        <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border md:col-span-2 lg:col-span-1">
-          <h3 class="font-bold text-lg mb-3 flex items-center gap-2"><i class="fas fa-microchip text-blue-500"></i> Core CS</h3>
-          <div class="flex flex-wrap gap-2"> {['DSA','DBMS','OOP','OS','Networking','AI'].map(s => <span key=s class="tech-icon"> {s} </span>)} </div>
-        </div>
+
+  <h2 class="text-3xl font-semibold mb-2">🛠️ Skills</h2>
+  <div class="w-16 h-1 bg-blue-500 mb-10"></div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Programming -->
+    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+        <i class="fas fa-terminal text-blue-500"></i> Programming
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="tech-icon">Python</span>
+        <span class="tech-icon">Java</span>
+        <span class="tech-icon">C</span>
+        <span class="tech-icon">PHP</span>
+        <span class="tech-icon">JavaScript</span>
+        <span class="tech-icon">SQL</span>
+        <span class="tech-icon">Shell</span>
       </div>
-    </section>
+    </div>
+
+    <!-- Web Development -->
+    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+        <i class="fas fa-globe text-blue-500"></i> Web Development
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="tech-icon">Django</span>
+        <span class="tech-icon">Flask</span>
+        <span class="tech-icon">HTML</span>
+        <span class="tech-icon">CSS</span>
+        <span class="tech-icon">JavaScript</span>
+        <span class="tech-icon">React.js</span>
+      </div>
+    </div>
+
+    <!-- AI & Data Science -->
+    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+        <i class="fas fa-robot text-blue-500"></i> AI & Data Science
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="tech-icon">ML</span>
+        <span class="tech-icon">Deep Learning</span>
+        <span class="tech-icon">Pandas</span>
+        <span class="tech-icon">NumPy</span>
+        <span class="tech-icon">Matplotlib</span>
+        <span class="tech-icon">Scikit-learn</span>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+        <i class="fas fa-tools text-blue-500"></i> Tools
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="tech-icon">Git</span>
+        <span class="tech-icon">GitHub</span>
+        <span class="tech-icon">VS Code</span>
+        <span class="tech-icon">Linux</span>
+        <span class="tech-icon">Ubuntu</span>
+        <span class="tech-icon">LaTeX</span>
+      </div>
+    </div>
+
+    <!-- Core CS -->
+    <div class="skill-cat bg-white dark:bg-slate-800 p-6 rounded-2xl border border-gray-200 dark:border-gray-700 md:col-span-2 lg:col-span-1">
+      <h3 class="font-bold text-lg mb-3 flex items-center gap-2">
+        <i class="fas fa-microchip text-blue-500"></i> Core CS
+      </h3>
+      <div class="flex flex-wrap gap-2">
+        <span class="tech-icon">DSA</span>
+        <span class="tech-icon">DBMS</span>
+        <span class="tech-icon">OOP</span>
+        <span class="tech-icon">OS</span>
+        <span class="tech-icon">Networking</span>
+        <span class="tech-icon">AI</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- Projects Section -->
     <section id="projects" class="py-20 scroll-mt-20">
